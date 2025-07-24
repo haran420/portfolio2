@@ -29,7 +29,7 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
+      <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -44,13 +44,13 @@ export const NavBar = () => {
 
               <Nav.Link href="#training" className={activeLink === 'training' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('training')}>Certifications</Nav.Link>
               <Nav.Link href="#education" className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('education')}>Education</Nav.Link>
-              <Nav.Link href="#Accomplishments" className={activeLink === 'Accomplishments' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Technical Certification')}>Technical</Nav.Link>
+              <Nav.Link href="#Accomplishments" className={activeLink === 'Accomplishments' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Accomplishments')}>Accomplishments</Nav.Link>
             </Nav>
-            <span className="navbar-text">
+             <span className="navbar-text">
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
-              <a href="https://drive.google.com/file/d/1InEkdBTb_wNOipdyt_e3Ihe5p547EXC6/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+               </HashLink>
+          n    <a href="https://drive.google.com/file/d/1K7QP7SWHTGZ17cc6nHEGd7w8yQV2UDVy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className="vvd">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>

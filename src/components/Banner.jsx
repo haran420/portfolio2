@@ -59,7 +59,7 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
+            {/* <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome back!</span>
@@ -67,7 +67,28 @@ export const Banner = () => {
                   <p>Recent graduate passionate about Software development, Currently working as a Vue Js Developer. Ready to Innovate and Collaborate </p>
                   <button onClick={handleClick}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
+            </TrackVisibility> */}
+              <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  {/* ✨ Animated Welcome Back Text ✨ */}
+                  <h2 className="typing-text">Welcome back!</h2>
+
+                  <h1>
+                    {`Hi! I'm Hariharan, `}
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Java Developer", "Frontend Developer", "Software Developer"]'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>Frontend Developer specializing in building modern, responsive user interfaces using Vue,React and Tailwind CSS, with a strong focus on performance, accessibility, and clean UI/UX design,
+                     with additional exposure to backend technologies like Spring Boot and MySQL.
+
+                  </p>
+                  <button onClick={handleClick}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                </div>
+              }
             </TrackVisibility>
+
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>

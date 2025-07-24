@@ -32,7 +32,8 @@ export const Contact = () => {
                   <div id="ff-compose">
                   <FormfacadeEmbed
 
-formFacadeURL="https://formfacade.com/include/105949574682736206741/form/1FAIpQLSdPAoXTxVOUotSGGMScnMB41iZaOh6CBjJ9fQrctH-HvdTipA/classic.js?div=ff-compose" 
+  formFacadeURL="https://formfacade.com/include/104389145976982667447/form/1FAIpQLSf3oUO2GThHDgBUC10Xw_D9Lf6UOdA5C3EkV0Z85CybsDFyrA/classic.js?div=ff-compose"
+
 
 onSubmitForm={() => console.log('Form submitted')}
 

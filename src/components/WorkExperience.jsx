@@ -25,7 +25,8 @@ export const WorkExperience = () => {
                 </div> <br></br>
                 <p><b>Chadura Tech Private Ltd</b>
                 <br></br>Working as a Vue JS Developer<br></br>
-                May 2025 - Present</p>
+                May 2025 - Present<br></br>
+                Bengaluru, Karnataka, India</p>
                 {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -60,7 +61,7 @@ export const WorkExperience = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="position-absolute" src={colorSharp2} alt="background"></img>
     </section>
   )
 }
