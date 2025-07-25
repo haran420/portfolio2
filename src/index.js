@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SplashCursor from './components/SplashCursor';
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      
+      <BrowserRouter basename="/funny"/>
     <SplashCursor />
     <App />
   </React.StrictMode>
