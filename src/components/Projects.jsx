@@ -30,6 +30,7 @@ export const Projects = () => {
       details: [
         "Static Frontend Project: Designed a responsive grocery website using HTML and CSS.",
         "Features intuitive layout and mobile-friendly design for better user experience.",
+        '🔗 Live Link: <a href="https://grocerywebsitee.netlify.app/" target="_blank" rel="noopener noreferrer" style="color:#0d6efd">https://grocerywebsitee.netlify.app/</a>',
       ],
     },
     {
