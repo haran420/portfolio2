@@ -18,12 +18,12 @@ export const WorkExperience = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Work Experience</h2><br></br>
                 <div className="text-center">
                 <img src={newLogo} alt="Company Logo" style={{ width: '150px' }} />
                 </div> <br></br>
-                <p><b>Chadura Tech Private Ltd</b>
+                <p><strong>Chadura Tech Private Ltd</strong>
                 <br></br>Working as a Vue JS Developer<br></br>
                 May 2025 - Present<br></br>
                 Bengaluru, Karnataka, India</p>

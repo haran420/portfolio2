@@ -705,8 +705,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-a.ff-powered-img img{
-  opacity: 0!important;
+a.ff-powered-img {
+  /* Hide the element entirely */
+  display: none !important; 
 }
 
 @media (max-width: 575.98px) {
@@ -752,3 +753,15 @@ a.ff-powered-img img{
   0%, 100% { border-color: transparent }
   50% { border-color: #00f2fe }
 }
+.txt-rotate > .wrap {
+  color: #00b4d8; /* Change to any color you like */
+  border-right: 0.08em solid #00b4d8;
+  padding-right: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #0339ae; }
+}
+

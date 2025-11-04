@@ -32,8 +32,8 @@ export const Projects = () => {
         "Features intuitive layout and mobile-friendly design for better user experience.",
         '🔗 Live Link: <a href="https://grocerywebsitee.netlify.app/" target="_blank" rel="noopener noreferrer" style="color:#0d6efd">https://grocerywebsitee.netlify.app/</a>',
       ],
-    },
-    {
+    },  
+    {   
       key: "alliance",
       title: "Alliance College Website",
       details: [
@@ -60,8 +60,14 @@ export const Projects = () => {
   const [activeKey, setActiveKey] = useState(projects[0].key);
   const selectedProject = projects.find((p) => p.key === activeKey);
 
+  // Define the animation variants for the main section
+  const sectionVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1.5, ease: "easeInOut" } },
+  };
+
   return (
-    <section
+    <motion.section
       id="projects"
       className="project min-vh-100 py-5 position-relative text-white"
       style={{
@@ -70,6 +76,9 @@ export const Projects = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      variants={sectionVariants}
+      initial="hidden"
+      animate="visible"
     >
       {/* Background Overlay */}
       <div
@@ -82,6 +91,7 @@ export const Projects = () => {
       ></div>
 
       <Container style={{ position: "relative", zIndex: 10 }}>
+        {/* H2 heading with its own animation */}
         <motion.h2
           className="text-center mb-5"
           initial={{ opacity: 0, y: 30 }}
@@ -109,7 +119,10 @@ export const Projects = () => {
             style={{ display: "inline-flex" }}
           >
             {projects.map(({ key, title }) => (
-              <Nav.Item key={key} style={{ display: "inline-block", margin: "0 10px" }}>
+              <Nav.Item
+                key={key}
+                style={{ display: "inline-block", margin: "0 10px" }}
+              >
                 <Nav.Link
                   className="nav-link-custom"
                   eventKey={key}
@@ -134,8 +147,8 @@ export const Projects = () => {
           <Col md={8}>
             <motion.div
               key={selectedProject.key}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               className="bg-white bg-opacity-10 p-4 rounded-3 shadow-lg"
               style={{ backdropFilter: "blur(10px)" }}
@@ -157,6 +170,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </motion.section>
   );
 };
