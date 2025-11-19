@@ -49,7 +49,7 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn" style={{marginTop: '50px'}}>
+            <div className="skill-bx wow zoomIn" style={{marginTop: '50px', boxShadow: '0px 0px 30px rgba(0, 255, 255, 0.5)'}}>
               <h2>Skills</h2>
               <Carousel
                 responsive={responsive}

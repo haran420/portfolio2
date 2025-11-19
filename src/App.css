@@ -236,10 +236,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  
+  /* 1. Image order remains the same: Ellipse 18, Gradient, Ellipse 19 */
+  background-image: 
+    url('./assets/img/Ellipse 21.png'), 
+    url('./assets/img/Gradient(2).png'), 
+    url('./assets/img/Ellipse 11.png');
+  
+  /* 2. Update the third position (Ellipse 19.png) */
+  background-position: 
+    bottom left, 
+    top right, 
+    left 400px center; /* <-- **THIS IS THE CHANGE** */
+  
+  background-size: 
+    auto,   
+    contain, 
+    auto;
+  
+  background-repeat: 
+    no-repeat, 
+    no-repeat, 
+    no-repeat;
 }
 .banner .tagline {
   font-weight: 700;
